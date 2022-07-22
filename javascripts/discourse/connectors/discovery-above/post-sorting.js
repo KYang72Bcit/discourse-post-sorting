@@ -37,10 +37,7 @@ export default {
   },
 
   actions: {
-    showDropdown() {
-      
-
-    },
+  
     changeStatus(newStatus) {
       
         const router = getOwner(this).lookup("router:main");

@@ -1,19 +1,11 @@
-<button class="posts-filter" {{on 'change' (fn this.changeStatus "views" )}} >
-  <a {{on 'click' (fn this.changeStatus "views" )}}>
-   By views
-  </a>
-
-   <a  {{on 'click' (fn this.changeStatus "likes")}}>
-    By likes
-  </a>
-
-   <a  {{on 'click' (fn this.changeStatus "activities")}}>
-    By recent
-  </a>
-
-  {{!-- {{unanswered-topic}} --}}
-
-
-  
-
-</button>
+{{combo-box
+    class="posts-filter"
+    content=statuses
+    value=status
+    valueProperty="value"
+    onChange=(action "changeStatus")
+    options=(hash
+      caretDownIcon="caret-right"
+      caretUpIcon="caret-down"
+    )
+  }}
