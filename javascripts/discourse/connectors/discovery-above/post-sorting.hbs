@@ -1,10 +1,19 @@
+<div class="customized-filter">
+  <button type="button" {{on 'click' (fn this.changeStatus "views" )}}>
+   By views
+  </button>
+
+   <button type="button" {{on 'click' (fn this.changeStatus "likes")}}>
+    By likes
+  </button>
+
+   <button type="button" {{on 'click' (fn this.changeStatus "activities")}}>
+    By recent
+  </button>
+
+  {{!-- {{unanswered-topic}} --}}
 
 
- 
+  
 
-{{!-- {{topic-sort sortable=sortable number='true' order='posts' name='replies'}} --}}
-
-  {{topic-sort  sortable=sortable number='true' order='likes' name='likes'}}
-
-{{topic-sort  sortable=sortable number='true' order='views' name='views' }}
-{{topic-sort  sortable=sortable number='true' order='activity' name='activity'}}
+</div>
