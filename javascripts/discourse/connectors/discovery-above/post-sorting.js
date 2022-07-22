@@ -24,9 +24,9 @@ export default {
   },
 
   setupComponent(args, component) {
-    const statuses = ["Recent", "Solved", "Unsolved", "Unanswered"].map((status) => {
+    const statuses = ["likes", "views", "activities"].map((status) => {
       return {
-        name: I18n.t(`solved.topic_status_filter.${status}`),
+        name: status,
         value: status,
       };
     });
