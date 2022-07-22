@@ -1,4 +1,4 @@
-<select class="posts-filter">
+<select class="posts-filter" {{on 'change' (fn this.changeStatus "views" )}} >
   <option  {{on 'change' (fn this.changeStatus "views" )}}>
    By views
   </option>
