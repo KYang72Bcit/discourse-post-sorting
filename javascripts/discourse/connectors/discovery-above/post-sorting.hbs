@@ -1,19 +1,19 @@
-<div class="customized-filter">
-  <button type="button" {{on 'click' (fn this.changeStatus "views" )}}>
+<select class="posts-filter">
+  <option  {{on 'change' (fn this.changeStatus "views" )}}>
    By views
-  </button>
+  </option>
 
-   <button type="button" {{on 'click' (fn this.changeStatus "likes")}}>
+   <option  {{on 'change' (fn this.changeStatus "likes")}}>
     By likes
-  </button>
+  </option>
 
-   <button type="button" {{on 'click' (fn this.changeStatus "activities")}}>
+   <option  {{on 'change' (fn this.changeStatus "activities")}}>
     By recent
-  </button>
+  </option>
 
   {{!-- {{unanswered-topic}} --}}
 
 
   
 
-</div>
+</select>
